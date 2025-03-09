@@ -1,0 +1,12 @@
+## 复用步骤
+1、移植工程后，先把build目录下面的东西都删除
+2、`CMakeLists.txt`里面，通过CMAKE_C_COMPILER 和 CMAKE_CXX_COMPILER 指定交叉编译器
+
+要么添加库，要么添加app。添加方法就是新建一个目录，源文件放进去之后，改写现有的CMake文件即可
+
+编译指令：`sh demo_build.sh`
+
+具体移植方法参考文档：https://blog.csdn.net/weixin_43717839/article/details/128032486
+
+## 补充
+父级的CMakeLists.txt中会调用add_subdirectory来执行子级目录的内容
