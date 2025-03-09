@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libadd_shared.so -o ../lib/libadd_shared.so CMakeFiles/add_shared.dir/intf.c.o   -L/home/jl/project/cmake_demo/pre_build  -L/home/jl/project/cmake_demo/pre_build/npu_lib  -L/home/jl/project/cmake_demo/pre_build/console_printf  -L/home/jl/project/cmake_demo/pre_build/alsa_lib 
